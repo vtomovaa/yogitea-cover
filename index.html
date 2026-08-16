@@ -436,7 +436,7 @@
 
     <div class="order" id="order">
         <div class="order-form">
-            <form action="./additional-links/thank-you.php">
+            <form action="#" id="demo-order-form" autocomplete="off">
 
                 <h1 class="title">ORDER NOW</h1>
 
@@ -444,19 +444,20 @@
                     <input type="text" placeholder="Full Name" required>
                 </div>
                 <div class="pole">
-                    <input type="number" placeholder="Telephone" required>
+                    <input type="tel" placeholder="Telephone" required>
                 </div>
                 <div class="pole">
                     <input type="email" placeholder="Email" required>
                 </div>
                 <div class="pole">
-                    <input type="text" placeholder="Adress" required>
+                    <input type="text" placeholder="Address" required>
                 </div>
 
                 <div class="price">
                     <h1 class="title">18.99€</h1>
-                    <button class="custom-btn2 btn-2">ORDER NOW</button>
+                    <button class="custom-btn2 btn-2" type="submit">ORDER NOW</button>
                 </div>
+                <p id="demo-order-message" class="demo-order-message" role="status"></p>
             </form>
         </div>
         <div class="img-order">
@@ -493,12 +494,7 @@
             },
         });
     </script>
-
-    <script src='/cdn/js/fa_events.js'></script>
-    <script>
-        fa_get_data('PageViewCover');
-    </script>
-
+    <script src="./portfolio-safe.js"></script>
 </body>
 
 </html>
